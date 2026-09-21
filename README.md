@@ -2,7 +2,7 @@
 
 Website tĩnh, không cần cài đặt và tương thích GitHub Pages.
 
-Website tự lưu trữ bộ chữ Google Sans Flex trong `assets/fonts`, không phụ thuộc Google Fonts hoặc CDN bên ngoài.
+Website tự lưu trữ bộ chữ Google Sans Flex trong `assets`, không phụ thuộc Google Fonts hoặc CDN bên ngoài.
 
 ## Xem trên máy
 

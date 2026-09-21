@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Google Sans Flex";
-  src: url("assets/fonts/google-sans-flex-text-regular.ttf") format("truetype");
+  src: url("assets/google-sans-flex-text-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Google Sans Flex";
-  src: url("assets/fonts/google-sans-flex-text-semibold.ttf") format("truetype");
+  src: url("assets/google-sans-flex-text-semibold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Google Sans Flex";
-  src: url("assets/fonts/google-sans-flex-display-bold.ttf") format("truetype");
+  src: url("assets/google-sans-flex-display-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700 900;
   font-display: swap;

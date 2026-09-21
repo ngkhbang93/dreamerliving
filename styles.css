@@ -72,8 +72,8 @@ a { color: inherit; text-decoration: none; }
 
 .hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; color: var(--white); isolation: isolate; overflow: hidden; }
 .hero-media, .hero-shade, .hero-grain { position: absolute; inset: 0; }
-.hero-media img { height: 100%; object-fit: cover; object-position: center 60%; transform: scale(1.03); animation: heroReveal 1.6s cubic-bezier(.2,.7,.2,1) both; }
-.hero-shade { z-index: 1; background: linear-gradient(90deg, rgba(10,18,14,.82) 0%, rgba(10,18,14,.4) 48%, rgba(10,18,14,.12) 80%), linear-gradient(0deg, rgba(10,18,14,.62) 0%, transparent 55%); }
+.hero-media img { height: 100%; object-fit: cover; object-position: center 52%; transform: scale(1.03); animation: heroReveal 1.6s cubic-bezier(.2,.7,.2,1) both; }
+.hero-shade { z-index: 1; background: linear-gradient(90deg, rgba(5,12,22,.9) 0%, rgba(7,15,24,.68) 42%, rgba(7,15,24,.18) 76%), linear-gradient(0deg, rgba(5,11,18,.7) 0%, transparent 58%); }
 .hero-grain { z-index: 2; opacity: .12; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E"); mix-blend-mode: soft-light; pointer-events: none; }
 .hero-content { position: relative; z-index: 3; max-width: 57rem; padding: calc(var(--header) + 3rem) var(--pad) clamp(6rem, 11vh, 8.5rem); }
 .eyebrow { margin: 0 0 1.4rem; color: var(--terra); font-size: .74rem; font-weight: 800; letter-spacing: .13em; line-height: 1.4; text-transform: uppercase; }
@@ -121,7 +121,7 @@ a { color: inherit; text-decoration: none; }
 
 .featured { display: grid; grid-template-columns: 1.08fr .92fr; min-height: 52rem; background: var(--cream); }
 .featured-media { position: relative; min-height: 48rem; overflow: hidden; }
-.featured-media img { height: 100%; object-fit: cover; }
+.featured-media img { height: 100%; object-fit: cover; object-position: 52% center; }
 .vertical-caption { position: absolute; left: 1.25rem; bottom: 2rem; padding: .5rem .75rem; color: var(--white); background: rgba(18,28,23,.78); font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; writing-mode: vertical-rl; transform: rotate(180deg); }
 .featured-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(3rem, 7vw, 8rem); }
 .featured-copy h2 { margin: 0; font-family: var(--serif); font-size: clamp(2.6rem, 4.4vw, 5rem); line-height: .98; letter-spacing: -.05em; }
@@ -155,7 +155,7 @@ a { color: inherit; text-decoration: none; }
 
 .about { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); align-items: center; gap: clamp(3rem, 8vw, 9rem); background: var(--paper); }
 .about-image { position: relative; max-width: 36rem; justify-self: center; }
-.about-image img { aspect-ratio: 4 / 5; object-fit: cover; object-position: 42% center; filter: saturate(.8); }
+.about-image img { aspect-ratio: 4 / 5; object-fit: cover; object-position: center; filter: saturate(.9) contrast(1.02); }
 .replace-photo { position: absolute; right: 1rem; bottom: 1rem; padding: .55rem .75rem; color: var(--ink); background: rgba(250,247,239,.9); font-size: .66rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 .about-copy h2 { font-size: clamp(2.8rem, 5vw, 5.3rem); }
 .about-copy > p:not(.eyebrow) { max-width: 42rem; color: #4c5951; }
@@ -242,6 +242,7 @@ textarea { resize: vertical; }
 @media (max-width: 640px) {
   :root { --header: 4.5rem; }
   .hero { min-height: 44rem; }
+  .hero-media img { object-position: 64% center; }
   .hero-content { padding-bottom: 7rem; }
   .hero h1 { font-size: clamp(3.7rem, 17vw, 5.5rem); }
   .hero-intro { font-size: 1.05rem; }
